@@ -27,10 +27,6 @@ as tarefas no navegador.
 
 Para que o Selenium funcione é necessário um executavel de um webdriver.No código é necessario espeficar o Navegador usado e caminho do webdriver.
 
-### Firefox
-Baixe o WEB driver para o Firefox em
-[Geckodriver](https://github.com/mozilla/geckodriver/releases).
-
 ### Chrome 
 Baixe o WEB driver para o Chrome em
 [Chromedriver](https://chromedriver.chromium.org/downloads).    
