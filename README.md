@@ -1,44 +1,38 @@
-## Requirements For Windows Systems
+## Requisitos Para Executar os arquivos deste repositorio
 
-Python3
+### Python3
 
-Get the Python 3.11 on the [Microsoft Store](https://apps.microsoft.com/store/detail/python-311/9NRWMJP3717K?hl=en-us&gl=us)
-`sudo apt-get install python3`
+Instale a ultima Python 3.11 disponível em [Microsoft Store](https://apps.microsoft.com/store/detail/python-311/9NRWMJP3717K?hl=en-us&gl=us)
 
-### Librarys
-For installing Python Librarys do you need the pip installed.You can install it with the following commands:
 
-`sudo apt install python3-pip`
+### Bibliotecas
 
 #### Pandas
-To manage data scrapped from sites and export it for excel sheets.
+Para lidar com os dados obtidos pelo WEB scrapping e exporta-los para uma planilha.
 
-`pip3 install pandas`
+`pip install pandas`
 
 ####  BeautifulSoup
-To scrap the web sites contents.
+para fazer o WEB scrapping em si.
 
-`pip3 install beautifulsoup4`
+`pip install beautifulsoup4`
 
 ####  Selenium
-Is the responsable for automating the tasks in the browser.
+É o responsavwl por automatizar 
+as tarefas no navegador.
 
-`pip3 install selenium`
+`pip install selenium`
 
-### ChromeDriver
+### WEB Drivers
 
-you will need to download latest executable from git repository 
+Para que o Selenium funcione é necessário um executavel de um webdriver.No código é necessario espeficar o Navegador usado e caminho do webdriver.
+
+### Firefox
+Baixe o WEB driver para o Firefox em
 [Geckodriver](https://github.com/mozilla/geckodriver/releases).
 
-Next you will need to add the directory containing the executable to the system path.
-you can do the following to append it to your system’s search path :
+### Chrome 
+Baixe o WEB driver para o Chrome em
+[Chromedriver](https://chromedriver.chromium.org/downloads).    
 
-`export PATH=$PATH:/path/to/directory/of/executable/downloaded/in/previous/step`
-
-Now you can run this code:
-```
-from selenium import webdriver
-browser = webdriver.Firefox()
-```
-Then a Mozila Firefox automated browser will opening.
-
+**OBS: Por padrao esse usa o Chrome WEB driver.Porém ele inclui tbm o executável do firefox.Se possivel tente pegar aa versão mais recencetes dos WEB  drivers.**
