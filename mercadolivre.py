@@ -16,6 +16,8 @@ caixaPesquisa.send_keys("Eletrônico")
 caixaPesquisa.send_keys(Keys.RETURN)
 
 
+time.sleep(9)
+#Clicando para aceitar os termos de cookie
 cookies = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "cookie-consent-banner-opt-out__action--key-accept")))
 cookies.click()
 
