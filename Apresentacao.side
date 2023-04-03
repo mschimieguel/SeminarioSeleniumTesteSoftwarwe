@@ -1,0 +1,656 @@
+{
+  "id": "15a1ff2c-011d-4d87-828a-ee4b4b99db20",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "9b5e8601-72c8-4722-b145-bea52d6502c4",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "660e50b5-9185-41e7-ae52-1881b8840c95"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "660e50b5-9185-41e7-ae52-1881b8840c95",
+      "name": "New Test",
+      "commands": [
+        {
+          "id": "8a76f08c-cb1d-4ef9-a3d5-55f0423bf8ec",
+          "command": "open",
+          "target": "/",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "3bd6b8ae-2a93-4139-94c6-b822d505a142",
+      "name": "Mercado Livre",
+      "commands": [
+        {
+          "id": "cc81e3e4-b686-46e3-861d-e410798d9143",
+          "command": "open",
+          "target": "https://www.mercadolivre.com.br/",
+          "value": ""
+        },
+        {
+          "command": "type",
+          "target": "id=cb1-edit",
+          "value": "Eletronicos",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "4724cb4e-5af3-4901-9711-b1143c244b4f",
+          "targets": [
+            [
+              "id=cb1-edit",
+              "id"
+            ],
+            [
+              "name=as_word",
+              "name"
+            ],
+            [
+              "css=#cb1-edit",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='cb1-edit'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "id=cb1-edit",
+          "value": "${KEY_ENTER}",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "1deccd93-5c1a-46f4-9b8a-df8e9df81716",
+          "targets": [
+            [
+              "id=cb1-edit",
+              "id"
+            ],
+            [
+              "name=as_word",
+              "name"
+            ],
+            [
+              "css=#cb1-edit",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='cb1-edit'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "mouseOver",
+          "target": "id=shipping_cost_highlighted",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "71da5885-b2f1-4b3f-8591-9d2681498dec",
+          "targets": [
+            [
+              "id=shipping_cost_highlighted",
+              "id"
+            ],
+            [
+              "css=#shipping_cost_highlighted",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='shipping_cost_highlighted'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//main[@id='root-app']/div/div[2]/aside/section/div[2]/ul/li/form/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=shipping_highlighted_fulfillment",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "73098903-d61a-4f6c-bfd0-649795d502fe",
+          "targets": [
+            [
+              "id=shipping_highlighted_fulfillment",
+              "id"
+            ],
+            [
+              "css=#shipping_highlighted_fulfillment",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='shipping_highlighted_fulfillment'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//main[@id='root-app']/div/div[2]/aside/section/div/ul/li/form/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29965f66-0b3f-4ad2-8fea-cecd2195ed71",
+      "name": "DCC",
+      "commands": [
+        {
+          "id": "da9b56e1-70f4-4435-8186-92afb178138c",
+          "command": "open",
+          "target": "/",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "90c780b6-a592-41ec-aca0-ca2b7ad50acf",
+      "name": "MenuDcc",
+      "commands": [
+        {
+          "id": "a3189589-0a9b-4a1c-9dbc-c1adb5cc6c6f",
+          "command": "open",
+          "target": "https://dcc.ufmg.br",
+          "value": ""
+        },
+        {
+          "command": "storeWindowHandle",
+          "id": "0000-0000-0000-0000",
+          "target": "root",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "linkText=Cursos",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "win338",
+          "id": "7b0e261a-6da2-4b2c-ab77-bdc05e3d8c9f",
+          "targets": [
+            [
+              "linkText=Cursos",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-46 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Cursos')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-46']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/nossos-cursos/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Cursos')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Pesquisa",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "win338",
+          "id": "9db546b2-4be3-4572-8cb5-ab4b40ef4b78",
+          "targets": [
+            [
+              "linkText=Pesquisa",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-45 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Pesquisa')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-45']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/pesquisa-desenvolvimento-e-inovacao/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Pesquisa')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Parcerias",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "win338",
+          "id": "1d85dd7c-bf9e-478e-b7a8-c50a7f440c1a",
+          "targets": [
+            [
+              "linkText=Parcerias",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-44 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Parcerias')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-44']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/parcerias-extensao/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Parcerias')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Pessoas",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "win338",
+          "id": "f062923e-0506-4fb7-90c4-b94a452f460f",
+          "targets": [
+            [
+              "linkText=Pessoas",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-43 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Pessoas')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-43']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/pessoas/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Pessoas')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Notícias",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "win338",
+          "id": "b74db86d-bebf-4ca4-a4d8-f6ca68457dc1",
+          "targets": [
+            [
+              "linkText=Notícias",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-887 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Notícias')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-887']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/noticias/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Notícias')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=#menu-item-2347 > .menu-link > span:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "win338",
+          "id": "542e0d65-9e85-408a-9871-3edb6b1697f7",
+          "targets": [
+            [
+              "css=#menu-item-2347 > .menu-link > span:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2347']/a/span)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span[contains(.,'Português')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8e36723a-0dca-4d31-9bd4-31306892a48e",
+      "name": "MenuIngles",
+      "commands": [
+        {
+          "id": "e07abd63-f72d-4fb0-8216-f13e55ffc2f7",
+          "command": "open",
+          "target": "https://dcc.ufmg.br/",
+          "value": ""
+        },
+        {
+          "command": "mouseOver",
+          "target": "css=#menu-item-2347 > .menu-link > span:nth-child(2)",
+          "value": "",
+          "id": "f6524421-cca0-490f-b8d0-9e95fe3d41de",
+          "fallbackTargets": [
+            [
+              "css=#menu-item-2347 > .menu-link > span:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2347']/a/span)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span[contains(.,'Português')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=#menu-item-2347-en span:nth-child(3)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "603f0183-6946-4cfc-9934-280ab4c35809",
+          "targets": [
+            [
+              "css=#menu-item-2347-en span:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2347-en']/a/span[2])[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span[contains(.,'English')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Courses",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "0073c3dd-0242-45f7-969d-7ecfdad3a981",
+          "targets": [
+            [
+              "linkText=Courses",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-2456 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Courses')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2456']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/en/courses/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Courses')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Research",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "26aade72-2bcb-488b-ad70-2e1d3a33e7b2",
+          "targets": [
+            [
+              "linkText=Research",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-2457 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Research')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2457']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/en/reasearch-development-and-inovation/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Research')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Partnerships",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "1aef24a2-4e07-40e6-9412-8c0d2dad9fe4",
+          "targets": [
+            [
+              "linkText=Partnerships",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-2458 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Partnerships')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2458']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/en/partnerships/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Partnerships')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=People",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c00e5b39-cc3d-4738-aa11-e6c8fa9fa815",
+          "targets": [
+            [
+              "linkText=People",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-2459 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'People')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2459']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/en/people/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'People')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=News",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "faf34933-9a66-41fb-9f03-b87e00fe0d1e",
+          "targets": [
+            [
+              "linkText=News",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-2460 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'News')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2460']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/en/news/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'News')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=About DCC",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "dbdb9868-776f-4770-aa55-c0d4a8e4baf2",
+          "targets": [
+            [
+              "linkText=About DCC",
+              "linkText"
+            ],
+            [
+              "css=#menu-item-2455 > .menu-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'About DCC')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//li[@id='menu-item-2455']/a)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/en/about-dcc/')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'About DCC')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  }
+}
